@@ -45,6 +45,9 @@ nav a:hover {
     color: black;
 }
 
+nav .menuNav {
+    /* display: none; */
+}
 
 /*------------------------------- home logo navbar */
 .homeLogo {
@@ -135,16 +138,21 @@ main {
 }
 
 main .leftSide {
+    /* background-color: pink; */
     width: 25%;
     height: 900px;
 }
 
 main .middle {
+    /* background-color: aqua; */
     width: 50%;
+    /* height: 500px; */
 }
 
 main .rightSide {
     width: 20%;
+    /* background-color: pink; */
+    /* height: 500px; */
 }
 
 /*------------------------- main leftside myprofile */
