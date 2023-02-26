@@ -13,21 +13,6 @@ notification.addEventListener("mouseout", function () {
     dropDwnNotification.style.visibility = "hidden";
 })
 
-// dropdown button on resize
-
-// -------------------------have to work on below code
-// window resize(){
-//     test();
-// }
-// function test(){
-//     if(matextmedi < 767px){
-//         mobile menu
-//     }
-//     else{
-//         desktop menu
-//     }
-// }
-
 //window resize to hide menu options on full screen
 function checkForWindowResize() {
     console.log(`Screen width: ${window.innerWidth}`);
