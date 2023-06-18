@@ -1,0 +1,57 @@
+.text-align-left {
+    text-align: left;
+}
+.text-align-center {
+    text-align: center;
+}
+.fs20 {
+    font-size: 20px;
+}
+.fs15 {
+    font-size: 15px;
+}
+.flex {
+    display: flex;
+}
+
+.wh23 {
+    width: 23px;
+    height: 23px;
+}
+.flex-alignItem-center {
+    display: flex;
+    align-items: center;
+}
+
+.width20 {
+    width: 20px;
+} 
+
+
+/* margins */
+.ml-5 {
+    margin-left: 5px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+
+/* padding */
+.pl-30 {
+    padding-left: 30px; !important
+}

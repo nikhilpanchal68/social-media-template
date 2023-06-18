@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Template</title>
+        <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+        <link rel="stylesheet" href="social media template.css">
+        <link rel="stylesheet" href="social media template utilities.css">
+    </head>
+    <body>
+        <div id="loading">
+            <img id="loading-image" src="image/loader/Ajaxloader.gif" alt="Loading..." />
+        </div>
+        <!------------------------ header -->
+        <header>
+            <nav>
+                <div>
+                    <a href="#" class="homeLogo">
+                        <i class="fa fa-home wh23"></i>
+                        <span>Logo</span>
+                    </a>
+                </div>
+                <div class="menuNav">
+                    <a href="#" title="News">
+                        <i class="fa fa-globe wh23"></i>
+                    </a>
+                    <a href="#" title="Account Setting">
+                        <i class="fa fa-gear wh23"></i>
+                    </a>
+                    <a href="#" title="Message">
+                        <i class="fa fa-envelope wh23"></i>
+                    </a>
+                    <div id="notification">
+                        <a class="">
+                            <i class="fa fa-bell wh23"></i>
+                        </a>
+                        <div id="dropDwnNotification">
+                            <p>One new friend request</p>
+                            <p>John Doe posted on your wall</p>
+                            <p>Jane likes your post</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="profileLogoDiv">
+                    <a href="#" class="profileLogo" title="My Account">
+                        <img class="wh23" src="image/profile logo.png"
+                        alt="Avatar">
+                    </a>
+                    <a href="#" class="replacePLogo" title="My Account">
+                        <i class="fa fa-bars wh23"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="dropDwnLinks">
+                <p><i class="mr-20 text-align-center fa fa-globe wh23"></i>News</p>
+                <p><i class="mr-20 text-align-center fa fa-gear wh23"></i>Account Setting</p>
+                <p><i class="mr-20 text-align-center fa fa-envelope wh23"></i>Message</p>
+                <p><i class="mr-20 text-align-center fa fa-bell wh23"></i>Notification</p>
+                <p><i class="mr-20 text-align-center fa fa-user wh23"></i>My Account</p>
+            </div>
+        </header>
+        <!-- ------------------------- main -->
+        <main id="mainDiv">
+            <!-------------------- left side div -->
+            <div class="leftSide">
+                <!------------------------------ my profile -->
+                <div class="myProfile">
+                    <p id="userName" class="mb-20 fs20">Nikhil Panchal</p>
+                    <img id="myProdilePic" class="mb-30 " src="image/profile logo.png" style="width: 50%;">
+                    <div class="flex mb-20 ">
+                        <i class="fa-solid fa-pencil width20"></i>
+                        <p class="text-align-left fs15 ml-20 ">Web Devloper</p>
+                    </div>
+                    <div class="flex mb-20 ">
+                        <i class="fa-solid fa-house width20"></i>
+                        <p class="text-align-left fs15 ml-20 ">Ontario, Canada</p>
+                    </div>
+                    <div class="flex">
+                        <i class="fa-solid fa-cake-candles width20"></i>
+                        <p class="text-align-left fs15 ml-20 ">May 06, 1996</p>
+                    </div>
+                </div>
+                <!---------------- groups left side div -->
+                <div class="groups mt-20">
+                    <div>
+                        <i class="fa fa-circle-o-notch fa-fw"></i>
+                        <p class="ml-20">My Groups</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-calendar-check-o fa-fw"></i>
+                        <p class="ml-20">My Events</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-users fa-fw"></i>
+                        <p class="ml-20">My Photos</p>
+                    </div>
+                </div>
+                <!----------------- interests -->
+                <div class="interests mt-20">
+                    <p>Interests</p>
+                    <div>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>JQuery</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+                <!------------------------- hey -->
+                <div class="hey mt-20 mb-20">
+                    <h2>Hey!</h2>
+                    <p class="mt-20">People are looking as your profile. Find out who.</p>
+                    <button id="btnHey">
+                        <h3><i class="fa fa-remove"></i></h3>
+                    </button>
+                </div>
+            </div>
+            <!-------------------- middle div -->
+            <div class="middle">
+                <!------------------ middle status -->
+                <div class="status">
+                    <p class="mt-20" style="opacity: 0.6;">Post New Status</p>
+                    <input id="statusIP" class="mt-20" type="text" ><br>
+                    <button class="mt-20" id="postBtn">
+                        <i class="fa fa-pencil"></i>
+                        <span class="ml-5">Post</span>
+                    </button>
+                </div>
+                <!-------------------- posts -->
+            <div id="posts">
+                <!----------------- middle post1 -->
+                <div class="post mt-20">
+                    <div class="postHeader mb-20">
+                        <div class="postImageDiv">
+                            <img class="postImage" src="image/postImage-6.png">
+                        </div>
+                        <div class="postPerson ml-20">
+                            <span>John Doe</span>
+                        </div>
+                        <div class="postTime">
+                            1 min
+                        </div>
+                    </div>
+                    <hr style="opacity: 0.5;" class="mb-20"></hr>
+                    <p class="postText mb-20" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, deleniti? Eaque accusamus veritatis id voluptatem facere, sit odit. Rem, aspernatur!</p>
+                    <div class="postPhotos ">
+                        <div class="mb-20">
+                            <img src="image/post images/postImage1.jpg" width="100%">
+                        </div>
+                        <div class="mb-20">
+                            <img src="image/post images/postImage3.jpg" width="100%">
+                        </div>
+                    </div>
+                    <div class="postBtns">
+                        <button type="button" class="likeBtn">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span class="ml-5">Like</span>
+                        </button>
+                        <button type="button" class="commentBtn">
+                            <i class="fa fa-comment"></i>
+                            <span class="ml-5">Comment</span>
+                        </button>
+                    </div>
+                </div>
+                <!------------------- middle post2 -->
+                <div class="post mt-20">
+                    <div class="postHeader mb-20">
+                        <div class="postImageDiv">
+                            <img class="postImage" src="image/postImage-2.png">
+                        </div>
+                        <div class="postPerson ml-20">
+                            <span>Jane Doe</span>
+                        </div>
+                        <div class="postTime">
+                            16 min
+                        </div>
+                    </div>
+                    <hr style="opacity: 0.5;" class="mb-20"></hr>
+                    <p class="postText mb-20" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati corrupti animi adipisci sint id, sapiente fugit, neque amet iste excepturi totam! Ipsam aliquid, unde ducimus perferendis vero laborum blanditiis.</p>
+                    <!-- <div class="postPhotos mb-20">
+                        <div>
+                            <img src="image/post images/postImage1.jpg" width="300px">
+                        </div>
+                        <div>
+                            <img src="image/post images/postImage3.jpg" width="300px">
+                        </div>
+                    </div> -->
+                    <div class="postBtns">
+                        <button type="button" class="likeBtn">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span class="ml-5">Like</span>
+                        </button>
+                        <button type="button" class="commentBtn">
+                            <i class="fa fa-comment"></i>
+                            <span class="ml-5">Comment</span>
+                        </button>
+                    </div>
+                </div>
+                <!------------------- middle post3 -->
+                <div class="post mt-20">
+                    <div class="postHeader mb-20">
+                        <div class="postImageDiv">
+                            <img class="postImage" src="image/postImage-5.png">
+                        </div>
+                        <div class="postPerson ml-20">
+                            <span>Angie Jane</span>
+                        </div>
+                        <div class="postTime">
+                            32 min
+                        </div>
+                    </div>
+                    <hr style="opacity: 0.5;" class="mb-20"></hr>
+                    <p class="postText mb-20" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem obcaecati corrupti animi adipisci sint id, sapiente fugit, neque amet iste excepturi totam! Ipsam aliquid, unde ducimus perferendis vero laborum blanditiis.</p>
+                    <div class="singlepostPhotos mb-20">
+                        <div>
+                            <img src="image/post images/postImage1.jpg" width="100%">
+                        </div>
+                        <!-- <div>
+                            <img src="image/post images/postImage3.jpg" width="300px">
+                        </div> -->
+                    </div>
+                    <div class="postBtns">
+                        <button type="button" class="likeBtn">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span class="ml-5">Like</span>
+                        </button>
+                        <button type="button" class="commentBtn">
+                            <i class="fa fa-comment"></i>
+                            <span class="ml-5">Comment</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-------------------- right side div -->
+            <div class="rightSide">
+                <!-------------- right side upcoming events -->
+                <div class="upcomingEvents">
+                    <p class="mb-20">Upcoming Events:</p>
+                    <div class="mb-20">
+                        <img src="image/event image/eventImage.jpg" width="100%">
+                    </div>
+                    <h3 class="mb-20">Holiday</h3>
+                    <p class="mb-20">Friday 15:00</p>
+                    <button id="infoBtn" type="button">Info</button>
+                </div>
+                <!------------ rightside friend request -->
+                <div class="friendReq mt-20">
+                    <p class="mb-20">Friend Requests</p>
+                    <div class="mb-20">
+                        <img src="image/postImage-3.png" width="50%">
+                    </div>
+                    <h3>Kiara Advani</h3>
+                    <div class="fReqBtns">
+                        <div class="mt-20">
+                            <button id="acceptBtn">
+                                <i class="fa-sharp fa-solid fa-check"></i>
+                            </button>
+                        </div>
+                        <div class="mt-20">
+                            <button id="rejectBtn">
+                                <i class="fa-sharp fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!------------ rightside ads -->
+                <div class="ads mt-20">
+                    <p>ADS</p>
+                </div>
+            </div>
+        </main>
+        <!-------------------------- Footer -->
+        <footer>
+            &copy mySocialMedia
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+        <script src="social media template.js"></script>
+        <script src="https://kit.fontawesome.com/97348c31f0.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  /* page loader */
+  #loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 1;
+    background-color: white;
+    z-index: 99;
+  }
+  #loading-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150x;
+    height: 150px;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+  }
+  /* -------------------header */
+  header {
+    width: 100%;
+    position: fixed;
+    background-color: #4d636f;
+    z-index: 1;
+  }
+  footer {
+    position: relative;
+    top: 50px;
+    background-color: #4d636f;
+    padding: 12px 24px;
+    text-align: center;
+  }
+  nav {
+    height: 100%;
+    display: flex;
+    position: relative;
+  }
+  nav div {
+    height: 100%;
+    display: flex;
+  }
+  nav div a {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+  }
+  nav a:hover {
+    background-color: white;
+    color: black;
+  }
+  /*------------------------------- home logo navbar */
+  .homeLogo {
+    background-color: #3a4b53;
+  }
+  .homeLogo:hover {
+    background-color: #bdc3c7;
+  }
+  .homeLogo span {
+    margin-left: 15px;
+  }
+  /* -----------------------------------------notification nav */
+  #notification a:hover {
+    background-color: #bdc3c7;
+  }
+  #notification #dropDwnNotification {
+    visibility: hidden;
+    position: absolute;
+    top: 51px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    font-size: 18px;
+  }
+  #notification #dropDwnNotification p {
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  #notification #dropDwnNotification p:hover {
+    background-color: #bdc3c7;
+  }
+  /* ----------profilelogo */
+  .profileLogoDiv {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+  }
+  .replacePLogo {
+    display: none;
+  }
+  .profileLogo img {
+    height: 23px;
+    width: 23px;
+  }
+  /* header dropdown links */
+  .dropDwnLinks {
+    display: none;
+  }
+  .dropDwnLinks p {
+    padding: 12px 24px;
+    color: white;
+    cursor: pointer;
+  }
+  .dropDwnLinks p:hover {
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+  }
+  /* ------------------------------------------------main div */
+  main {
+    position: relative;
+    top: 55px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 25px 15px;
+    justify-content: space-between;
+    background-color: #f5f7f8 !important;
+  }
+  main .leftSide {
+    width: 25%;
+    height: 900px;
+  }
+  main .middle {
+    width: 50%;
+  }
+  main .rightSide {
+    width: 20%;
+  }
+  /*------------------------- main leftside myprofile */
+  main .leftSide .myProfile {
+    padding: 15px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .leftSide .myProfile div {
+    padding: 0px 9px;
+  }
+  /*------------------------- main leftside groups */
+  .leftSide .groups {
+    background-color: #4d636f;
+    color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .leftSide .groups div {
+    padding: 12px 24px;
+    display: flex;
+  }
+  .leftSide .groups div:hover {
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+  }
+  /*------------------------- main leftside interests */
+  .leftSide .interests {
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 12px 24px;
+    line-height: 2;
+  }
+  .leftSide .interests div span {
+    background-color: #4d636f;
+    color: white;
+    padding: 0px 10px;
+  }
+  /* ----------------------------main leftside hey */
+  .leftSide .hey {
+    background-color: #dfe5e8;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 12px 24px;
+    position: relative;
+  }
+  .leftSide .hey #btnHey {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #becbd2;
+    border: none;
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  .leftSide .hey #btnHey:hover {
+    background-color: #ccc;
+  }
+  /*--------------------------------- middle */
+  .middle .status {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .middle .status input {
+    width: 100%;
+    opacity: 0.6;
+    padding: 10px;
+  }
+  .middle .status input:focus {
+    opacity: 1;
+  }
+  .middle .status #postBtn {
+    padding: 12px 16px;
+    background-color: #607d8b;
+    color: white;
+    border: none;
+  }
+  .middle .status #postBtn:hover {
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+  }
+  /*----------------------------- middle posts */
+  .middle .post {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .middle .post .postHeader {
+    position: relative;
+    display: flex;
+  }
+  .middle .post .postHeader .postImageDiv {
+    display: flex;
+  }
+  .post .postHeader div .postImage {
+    width: 80px;
+  }
+  .post .postHeader .postPerson {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  .post .postHeader .postTime {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    opacity: 0.6;
+  }
+  .post .postPhotos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post .postPhotos div {
+    width: 48%;
+    text-align: center;
+  }
+  .post .singlepostPhotos div {
+    width: 100%;
+    text-align: center;
+  }
+  .post .postBtns .likeBtn {
+    padding: 12px 16px;
+    background-color: #607d8b;
+    color: white;
+    border: none;
+  }
+  .post .postBtns .likeBtn:hover {
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+  }
+  .post .postBtns .commentBtn {
+    padding: 12px 16px;
+    background-color: #607d8b;
+    color: white;
+    border: none;
+  }
+  .post .postBtns .commentBtn:hover {
+    background-color: #bdc3c7;
+    color: black;
+    cursor: pointer;
+  }
+  /*----------------------------------- rightside */
+  /*----------- rightside upcoming events */
+  .rightSide .upcomingEvents {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .rightSide .upcomingEvents #infoBtn {
+    width: 100%;
+    padding: 12px 24px;
+    border: none;
+    background-color: #dfe5e8;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .rightSide .upcomingEvents #infoBtn:hover {
+    background-color: #bdc3c7;
+  }
+  /* ---------------rightiside frien req */
+  .rightSide .friendReq {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  .rightSide .friendReq .fReqBtns {
+    display: flex;
+  }
+  .rightSide .friendReq .fReqBtns div {
+    width: 50%;
+  }
+  .rightSide .friendReq .fReqBtns #acceptBtn {
+    text-align: center;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    opacity: 0.6;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .rightSide .friendReq .fReqBtns #acceptBtn:hover {
+    background-color: #bdc3c7;
+    color: black;
+  }
+  .rightSide .friendReq .fReqBtns #rejectBtn {
+    text-align: center;
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #f44336;
+    opacity: 0.6;
+    border: none;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .rightSide .friendReq .fReqBtns #rejectBtn:hover {
+    background-color: #bdc3c7;
+    color: black;
+  }
+  /*----------- rightside ads */
+  .rightSide .ads {
+    background-color: white;
+    color: black;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  /*--------------------- responsive */
+  @media only screen and (max-width: 991px) {
+    #loading-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    #loading-image {
+      width: 100px;
+      height: 100px;
+    }
+    main {
+      flex-direction: column;
+    }
+    main .leftSide {
+      width: 100%;
+    }
+    main .middle {
+      width: 100%;
+      padding: 0px 10px;
+    }
+    .post .postPhotos {
+      flex-direction: column;
+    }
+    .post .postPhotos div {
+      width: 100%;
+    }
+    main .rightSide {
+      width: 100%;
+    }
+    .rightSide {
+      margin-top: 20px;
+    }
+    .rightSide .friendReq .fReqBtns {
+      display: flex;
+      flex-direction: column;
+    }
+    .rightSide .friendReq .fReqBtns div {
+      width: 100%;
+    }
+    .profileLogo {
+      display: none;
+    }
+    .replacePLogo {
+      display: block;
+    }
+    /* dropdown menu */
+    nav .menuNav {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    #loading-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
